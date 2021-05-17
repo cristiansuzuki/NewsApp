@@ -27,3 +27,8 @@ def index(request):
     mylist = zip(news, desc, img, url)
 
     return render(request, "index.html", context={"mylist": mylist})
+
+
+# Pagina de erro 500
+def page_error(request):
+    return render(request, "500.html")
