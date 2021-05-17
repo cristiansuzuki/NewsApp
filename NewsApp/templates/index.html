@@ -69,14 +69,15 @@
 
     <div class="card border-light mb-3">
       <div class="card border-light mb-3">
-        <img src="{{ img }}" alt="image" />
+        <img style="max-width: 300px;" src="{{ img }}" alt="image" />
       </div>
       <h4><span class="badge badge-light">Título:</span></h4>
       <h5>{{ hl }}{{ value|linebreaks }}</h5>
       <h4><span class="badge badge-light">Descrição:</span></h4>
       <h5>{{ des }}{{ value|linebreaks }}</h5>
       <h4><span class="badge badge-light">Link:</span></h4>
-      <h5>{{ url }}</h5>
+
+      <h5><a href="{{ url }}">Clique aqui para acessar a notícia</a></h5>
     </div>
     {% endfor %}
   </body>
